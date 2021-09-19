@@ -1,0 +1,36 @@
+{
+    "name": "socialhead/core",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dang Bui",
+            "email": "bdangvn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Socialhead\\Core\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Socialhead\\Core\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Socialhead\\Core\\AppCoreProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.x-dev",
+        "orchestra/testbench": "6.x-dev"
+    },
+    "require": {
+        "firebase/php-jwt": "dev-master"
+    }
+}
